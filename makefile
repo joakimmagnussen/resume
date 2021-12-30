@@ -1,4 +1,4 @@
-CC = pdflatex
+CC = xelatex
 
 BUILD_PATH = build
 BIN = ruben_sorensen_cv

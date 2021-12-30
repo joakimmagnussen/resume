@@ -1,10 +1,37 @@
-\documentclass{article}
+\documentclass[a4paper, 12pt]{article}
 
-\title{CV}
-\author{Ruben Sørensen}
-\date{\today}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+
+\setsansfont{Ubuntu}[
+    Path=./res/Ubuntu/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Medium,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-MediumItalic
+    ]
+
+\newcommand{\horizontalline}[1]{\vspace{5mm}\noindent\rule{#1}{0.04pt}\vspace{5mm}}
 
 \begin{document}
-\maketitle
+{\sffamily
 
+    % Name and professional title
+    \noindent \begin{minipage}{.5\textwidth}
+        \Huge\noindent \textbf{Ruben Sørensen} \\
+        \Large Dataingeniør student \\
+    \end{minipage}
+    % Contact and location
+    \begin{minipage}{.5\textwidth}
+        \raggedleft +47 936 38 328                       \includegraphics[scale=0.0225]{res/icon_phone.png}    \\
+        \raggedleft ruben.sorensen98@gmail.com           \includegraphics[scale=0.025]{res/icon_envelope.png}  \\
+        \raggedleft Steenstrups Gate 26, 3616 Kongsberg  \includegraphics[scale=0.025]{res/icon_house.png}     \\
+        \raggedleft Linkedin.com/rubensorensen           \includegraphics[scale=0.025]{res/icon_linkedin}      \\
+    \end{minipage}
+
+    \horizontalline{\linewidth}
+
+}
 \end{document}
