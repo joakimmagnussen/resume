@@ -1,15 +1,14 @@
 \documentclass[a4paper, 12pt]{article}
-
-\usepackage[margin=1.5cm]{geometry}
-\usepackage[hidelinks]{hyperref}
 \usepackage{src/resume}
 
 \begin{document}
+    %
     % Name and professional title
-    \noindent \begin{minipage}{.5\textwidth}
-        \name{Ruben Sørensen}
+    \begin{minipage}{.5\textwidth}
+        \name{Ruben}{Sørensen}
         \professionaltitle{Dataingeniør student}
     \end{minipage}
+    %
     % Contact and location
     \begin{minipage}{.5\textwidth}
         \generalinfo{+47 936 38 328}{res/icon-phone.png}{0.0225}
@@ -18,6 +17,36 @@
         \generalinfo{\href{https://linkedin.com/in/rubensorensen}{rubensorensen}}{res/icon-linkedin.png}{0.025}
     \end{minipage}
 
-    \horizontalline{\linewidth}
+    \horizontalline{\linewidth}{1cm}
+
+    % Left elements
+    \begin{minipage}[t]{0.3\textwidth}
+        \Large\textbf{Utdanning}\\\\
+        %
+        \normalsize\textbf{Dataingeniør}\\
+        \small{Universitetet i Sørøst-Norge}\\
+        \small \textit{08/20 - d.d} \\
+
+        \normalsize\textbf{Tresemester}\\
+        \small{Universitetet i Sørøst-Norge}\\
+        \small \textit{06/20 - 08/20}\\\\
+        %
+        \horizontalline{2.5cm}{0.4cm}
+        \Large\textbf{Organisasjoner}\\\\
+        %
+        \normalsize\textbf{Studentrådsleder}\\
+        \small{Studentdemokratiet \\i Sørøst-Norge}\\
+        \small{\textit{06/21 - d.d}}
+    \end{minipage}
+    \hfill\vline\hfill
+    \begin{minipage}[t]{0.6\textwidth}
+        \Large \textbf{Profil}\\\\
+        \input{src/profil.tex} \\\\
+        %
+        \horizontalline{\linewidth}{0.4cm}
+        \Large \textbf{Erfaring}\\\\
+        \large\textbf{Studentassistent}\\
+        \normalsize Universitetet i Sørøst-Norge | \small\textit{08/21 - d.d}\\
+    \end{minipage}
 
 \end{document}

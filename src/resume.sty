@@ -1,8 +1,11 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{resume}[2013/01/13 Resume Package]
 
+\RequirePackage[margin=1.5cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{fontspec}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{bookmark}
 
 \setsansfont{Ubuntu}[
     Path=./res/Ubuntu/,
@@ -13,10 +16,11 @@
     BoldItalicFont=*-Italic
     ]
 \setlength{\parindent}{0pt}
+\pagenumbering{gobble}
 
 \renewcommand\familydefault{\sfdefault}
-\newcommand{\horizontalline}[1]{\vspace{5mm}\rule{#1}{0.04pt}\vspace{5mm}}
-\newcommand{\name}[1]{\Huge \textbf{Ruben Sørensen}\\}
+\newcommand{\horizontalline}[2]{\vspace{#2}\rule{#1}{0.04pt}\vspace{#2}\\}
+\newcommand{\name}[2]{\Huge \textbf{#1} #2\\}
 \newcommand{\professionaltitle}[1]{\Large#1\\}
 \newcommand{\generalinfo}[3]{\small\raggedleft #1\hspace{3mm}\includegraphics[scale=#3]{#2}\\}
 
