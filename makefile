@@ -1,7 +1,7 @@
 CC = xelatex
 
 BUILD_PATH = build
-BIN = ruben_sorensen_cv
+BIN = RubenSorensen_cv
 SRC_PATH = src
 MAIN_FILE = main.tex
 
