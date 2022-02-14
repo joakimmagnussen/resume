@@ -6,4 +6,4 @@
 - Envelope icon - 'Freepik' at Flaticon.com
 - House icon - 'Dave Gandy' at Flaticon.com
 - Linkedin icon - 'NajmunNahar' at Flaticon.com
-- Git icon - 'Creatype' at Flaticon.com
+- Github icon - 'Hight Quality Icons' at Flaticon.com
